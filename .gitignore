@@ -1,9 +1,9 @@
 */extensions/*
-*/extensions64/*
-build/*
+!*/extensions/.gitkeep 
+
+# exception to the rule
+
 
 
 *.iso
 
-# exception to the rule
-!*/.gitkeep 
