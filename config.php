@@ -1,7 +1,7 @@
 <?php
 
 define('image_name', 'HotNoob 2024');
-define('compression_level', 0); //0 for quick testing, 4 for max
+define('compression_level', 4); //0 for quick testing, 4 for max
 
 
 #region x86 config
