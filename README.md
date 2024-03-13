@@ -13,7 +13,9 @@ APPEND    iso raw
 1.  Download TinyCore Iso
 2.  Install Requirements
 3.  Edit config.php
-4.  run php script
+4.  Edit extensions.txt
+5.  Edit Files
+6.  run php script
     ```
     php -f build-tinycore.php
     ```
@@ -21,7 +23,7 @@ APPEND    iso raw
     ```
     php -f build-tinycore.php x86_64
     ```
-5. Enjoy
+7. Enjoy
 
 
 
