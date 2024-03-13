@@ -1,7 +1,7 @@
 # TinyCore-Remaster-PHP
 Simple PHP Script for creating custom tiny core images ( remastering )
 
-The images made through this script are PXE BOOTABLE.
+The images made through this script are PXE BOOTABLE. ( that's what i mainly use tinycore for )
 
 ```
 KERNEL    /kernels/memdisk
