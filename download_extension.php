@@ -94,6 +94,7 @@ function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86"
     if($download)
     {
         echo 'Downloading Package: '.$package.PHP_EOL;
+        echo $tcz.PHP_EOL;
 
         download_file($tcz, $tczFile);
         download_file($md5, $md5File);
@@ -124,7 +125,7 @@ function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86"
             {
                 echo 'Found Dependancy: '.$p.PHP_EOL;
                 //download package
-                $count += download_package($p, $dir);
+                $count += download_package($p, $dir, $tc_version, $tc_arch, $server);
             }
         }
     }
