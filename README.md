@@ -1,5 +1,6 @@
 # TinyCore-Remaster-PHP
 Simple PHP Script for creating custom tiny core images ( remastering )
+
 The images made through this script are PXE BOOTABLE.
 
 `
@@ -15,7 +16,6 @@ APPEND    iso raw
 `
 php -f build-tinycore.php
 `
-
 or to specify arch. currently only x86 works. 
 `
 php -f build-tinycore.php x86_64
