@@ -10,18 +10,18 @@ APPEND    iso raw
 ```
 
 # usage
-0. Install Requirements
-1. Edit config.php
-2. Run php script
-```
-php -f build-tinycore.php
-```
-or to specify arch. currently only x86 works. 
-```
-php -f build-tinycore.php x86_64
-```
-
-4. Enjoy
+1.  Download TinyCore Iso
+2.  Install Requirements
+3.  Edit config.php
+4.  run php script
+    ```
+    php -f build-tinycore.php
+    ```
+    or to specify arch. currently only x86 works. 
+    ```
+    php -f build-tinycore.php x86_64
+    ```
+5. Enjoy
 
 
 
