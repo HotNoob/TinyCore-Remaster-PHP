@@ -27,11 +27,12 @@ php -f build-tinycore.php x86_64
 
 ### requirements
 on the todo to make a list. 
-
+```
 rsync
 xorriso
 advdef
 unsquashfs
+```
 
 ### isohdpfx.bin
 this is from: apt-install isolinux && cp /usr/lib/ISOLINUX/isohdpfx.bin custom_image_files_64/bootfiles/isolinux/isohdpfx.bin
