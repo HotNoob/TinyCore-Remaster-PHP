@@ -28,12 +28,16 @@ APPEND    iso raw
 
 
 ### requirements
-on the todo to make a list. 
 ```
+php
 rsync
 xorriso
 advdef
 unsquashfs
+mkisofs
+```
+```
+apt install php rsync xorriso advancecomp squashfs-tools mkisofs
 ```
 
 ### isohdpfx.bin
