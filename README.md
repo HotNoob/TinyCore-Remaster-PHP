@@ -14,7 +14,7 @@ APPEND    iso raw
 2.  Install Requirements
 3.  Edit config.php
 4.  Edit extensions.txt
-5.  Edit Files
+5.  Edit Files - custom_image_files/files
 6.  run php script
     ```
     php -f build-tinycore.php
