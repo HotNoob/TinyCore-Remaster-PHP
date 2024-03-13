@@ -35,6 +35,7 @@ rsync
 xorriso
 advdef
 unsquashfs
+mkisofs
 ```
 
 ### isohdpfx.bin
