@@ -1,0 +1,44 @@
+#util
+nano.tcz
+
+#script requirements
+dmidecode
+php-7.4-cli
+php-7.4-dev
+php-7.4-ext
+php-7.4-fpm
+#for php sqlite support
+sqlite3
+ca-certificates
+openssl-1.1.1
+openssl-1.1.1-dev
+openssh
+libssh2
+util-linux
+lshw
+lsscsi
+pci-utils
+smartmontools
+curl
+#shred
+coreutils
+git
+screen
+
+#extra php requirements
+libxml2
+libffi
+pcre2
+
+#drivers -- keep drivers to minimum for faster boot
+firmware-i915.tcz
+firmware-intel_e100.tcz
+firmware-intel.tcz
+firmware-broadcom_bcm43xx.tcz
+firmware-broadcom_bnx2.tcz
+firmware-broadcom_bnx2x.tcz
+firmware-rtl_nic.tcz
+firmware-lan.tcz
+
+firmware-misc
+mtd-5.15.10-tinycore
