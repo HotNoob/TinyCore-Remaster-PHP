@@ -43,3 +43,5 @@ apt install php rsync xorriso advancecomp squashfs-tools mkisofs
 ### isohdpfx.bin
 this is from: apt-install isolinux && cp /usr/lib/ISOLINUX/isohdpfx.bin custom_image_files_64/bootfiles/isolinux/isohdpfx.bin
 put in repo for convenience. 
+
+can also be found in syslinux.tcz
