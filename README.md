@@ -21,7 +21,7 @@ or to specify arch. currently only x86 works.
 php -f build-tinycore.php x86_64
 `
 
-3. Enjoy
+4. Enjoy
 
 
 
