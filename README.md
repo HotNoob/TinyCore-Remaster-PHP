@@ -3,9 +3,9 @@ Simple PHP Script for creating custom tiny core images ( remastering )
 
 The images made through this script are PXE BOOTABLE.
 
-`KERNEL    /kernels/memdisk
+``KERNEL    /kernels/memdisk
 INITRD    /images/you-tinycore.iso
-APPEND    iso raw`
+APPEND    iso raw``
 
 # usage
 0. Install Requirements
