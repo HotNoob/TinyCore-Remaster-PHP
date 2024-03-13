@@ -4,3 +4,6 @@ build/*
 
 
 *.iso
+
+# exception to the rule
+!*/.gitkeep 
