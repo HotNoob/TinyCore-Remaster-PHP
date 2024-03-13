@@ -30,6 +30,7 @@ APPEND    iso raw
 ### requirements
 on the todo to make a list. 
 ```
+php
 rsync
 xorriso
 advdef
