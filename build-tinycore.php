@@ -94,9 +94,9 @@ if(!empty($_CONFIG[$arch]['sas_driver_hotfix']) && $_CONFIG[$arch]['sas_driver_h
     echo PHP_EOL.'==MOVING DRIVERS=='.PHP_EOL;
     $tinyCoreKernel = get_kernel($_CONFIG[$arch]['tinycore_version'], $arch);
     shell_exec('mkdir '.$_CONFIG[$arch]['temp_folder'].'/extract/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
-    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/megaraid '.$extractDir.'/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
-    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/mpt3sas '.$extractDir.'/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
-    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/scsi_transport_sas.ko.gz '.$extractDir.'/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
+    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/megaraid '.$_CONFIG[$arch]['temp_folder'].'/extract/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
+    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/mpt3sas '.$_CONFIG[$arch]['temp_folder'].'/extract/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
+    shell_exec('cp -a '.$_CONFIG[$arch]['temp_folder'].'/extract/usr/local/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi/scsi_transport_sas.ko.gz '.$_CONFIG[$arch]['temp_folder'].'/extract/lib/modules/'.$tinyCoreKernel.'/kernel/drivers/scsi');
 }
 
 
