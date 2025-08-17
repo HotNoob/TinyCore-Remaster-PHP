@@ -31,13 +31,9 @@ function check_md5($md5File, $file)
     return false;
 }   
 
-
-function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86", $server ="http://repo.tinycorelinux.net")
+function get_kernel($tc_version = "13.x", $tc_arch = "x86", $server ="http://repo.tinycorelinux.net")
 {
-    $package = trim($package);
-    $package = str_replace('.tcz', '', $package);
 
-    $base_url = "$server/$tc_version/$tc_arch/tcz/";
     $info_url = "$server/$tc_version/$tc_arch/tcz/info.lst";
 
     //get kernel version
@@ -51,7 +47,21 @@ function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86"
     else
         preg_match_all('/\-(\d+\.\d+\.\d+-tinycore'.$a.')\.tcz/', $info, $matches);
     
-    $kernel = $matches[1][0];
+    return $matches[1][0];
+
+}
+
+$kernel = '';
+function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86", $server ="http://repo.tinycorelinux.net")
+{
+    global $kernel;
+    $package = trim($package);
+    $package = str_replace('.tcz', '', $package);
+
+    $base_url = "$server/$tc_version/$tc_arch/tcz/";
+    
+    if(empty($kernel)) //only have todo this once.
+        $kernel = get_kernel($tc_version, $tc_arch, $server);
 
     $package = str_replace('-KERNEL', '-'.$kernel, $package);
 
@@ -62,10 +72,6 @@ function download_package($package, $dir, $tc_version = "13.x", $tc_arch = "x86"
     $tczFile = $dir.'/'.$package.".tcz";
     $depsFile = $dir.'/'.$package.".dep";
     $md5File = $dir.'/'.$package.".tcz.md5.txt";
-
-
-
-    
 
 
     echo 'Checking Package: '.$package.PHP_EOL;
